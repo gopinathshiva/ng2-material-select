@@ -1,0 +1,13 @@
+<ng2-dropdown>
+    <ng2-dropdown-button [disabled]="disabled" [showFontAwesomeIcon]="showFontAwesomeIcon">
+        {{ placeholderDisplay }}
+    </ng2-dropdown-button>
+    <ng2-dropdown-menu [focusFirstElement]="false">
+        <ng2-menu-item *ngFor="let option of options;"
+                       [class.selected]="isSelected(option)"
+                       [preventClose]="multiple"
+                       [value]="option">
+            {{ displayValue(option) }}
+        </ng2-menu-item>
+    </ng2-dropdown-menu>
+</ng2-dropdown>

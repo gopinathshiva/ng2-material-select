@@ -1,0 +1,13 @@
+body {
+    padding: 40px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.fixed-section {
+    position: fixed;
+    top: 30%;
+    right: 10%;
+}
